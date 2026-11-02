@@ -13,7 +13,7 @@
 
 <br><br>
 
-<img src="assets/pipeline.svg" width="100%" alt="$ kraven run — ✓ fetch: qa tester, bs it graduate, cavite ph · ✓ decide: automate the boring parts of small businesses · ✓ deliver: site-doctor, qa-portfolio, one health · ✓ schedule: open for freelance work · all checks passing · live checks of onehealth.my and qa-portfolio, refreshed every 6 hours" />
+<img src="assets/pipeline.svg" width="100%" alt="$ kraven run — ✓ fetch: qa tester, bs it graduate, cavite ph · ✓ decide: automate the boring parts of small businesses · ✓ deliver: site-doctor, qa-portfolio, one health · ✓ schedule: open for freelance work · all checks passing · live check of qa-portfolio, refreshed every 6 hours" />
 
 <br><br>
 

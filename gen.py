@@ -10,7 +10,8 @@ from pathlib import Path
 from xml.sax.saxutils import escape
 
 OUT = Path(__file__).parent / "assets"
-SITES = [("onehealth.my", "https://onehealth.my/"), ("qa-portfolio", "https://nagisa314.github.io/qa-portfolio/")]
+# onehealth.my is left out: its host (Hostinger CDN) answers 403 to GitHub Actions servers
+SITES = [("qa-portfolio", "https://nagisa314.github.io/qa-portfolio/")]
 PHT = timezone(timedelta(hours=8))
 BG, PANEL, FG, DIM, LINE, DOT = "#0d0d0d", "#141414", "#f2f2f2", "#8a8a8a", "#262626", "#202020"
 MONO = "ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace"
