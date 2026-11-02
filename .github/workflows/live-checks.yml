@@ -1,0 +1,26 @@
+name: live checks
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [gen.py]
+
+permissions:
+  contents: write
+
+concurrency: live-checks  # a manual run and the schedule never push at the same time
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 gen.py
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets
+          git diff --cached --quiet || { git commit -m "live checks: refresh panels" && git push; }
